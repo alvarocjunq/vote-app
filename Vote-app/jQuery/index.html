@@ -1,0 +1,44 @@
+<html>
+<head>
+<link href="resources/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="resources/style.css" rel="stylesheet" type="text/css"/>
+<script src="resources/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="resources/resolver.js" type="text/javascript"></script>
+<script src="resources/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script>
+function onClickPositive(obj){ positiveclick(obj.parentNode.parentNode.id);}
+function onClickNegative(obj){ negativeclick(obj.parentNode.parentNode.id);}
+</script>
+</head>
+<body>
+<div class="panel panel-default" >
+  <div class="panel-heading"><h3 class="panel-title">Citações</h3></div>
+  <div class="panel-body" id="content">
+	  <div class="row" id="cit-1">
+		Se suas ações inspirarem os outros a sonhar mais, aprender mais, fazer mais e se tornar mais do que são, você é um líder.<br>J. Quincy Adams<br>
+		<div class="vote"> 
+			<div class="col-md-1" onClick="onClickPositive(this)"><button type="button" class="btn btn-success">+1</button></div>
+			<div class="col-md-1" onClick="onClickNegative(this)"><button type="button" class="btn btn-danger">-1</button></div>
+		</div>
+		<div class="col-md-3 acumulator"><b>Acumulador: </b><span>0</span></div>
+	  </div><br>
+	  <div class="row" id="cit-2">
+		Faça com que todos compreendam que marketing é importante demais para ser deixado por conta apenas do pessoal de marketing.<br>Sérgio Zyman<br>
+		<div class="vote">
+			<div class="col-md-1" onClick="onClickPositive(this)"><button type="button" class="btn btn-success">+1</button></div>
+			<div class="col-md-1" onClick="onClickNegative(this)"><button type="button" class="btn btn-danger">-1</button></div>
+		</div>
+		<div class="col-md-3 acumulator"><b>Acumulador: </b><span>0</span></div>
+	  </div><br>
+	  <div class="row" id="cit-3">
+		Ache as causas de por que o desempenho é bom e por que o desempenho não é bom.<br>Ram Charan<br>
+		<div class="vote">
+			<div class="col-md-1" onClick="onClickPositive(this)"><button type="button" class="btn btn-success">+1</button></div>
+			<div class="col-md-1" onClick="onClickNegative(this)"><button type="button" class="btn btn-danger">-1</button></div>
+		</div>
+		<div class="col-md-3 acumulator"><b>Acumulador: </b><span>0</span></div>
+	  </div>
+  <div>
+</div>
+</body>
+</html>
